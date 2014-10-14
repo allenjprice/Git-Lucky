@@ -1,7 +1,10 @@
 {
   "name": "gitlucky",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.9.7"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.7.3",

@@ -23,8 +23,8 @@ angular.module('gitLuckyApp')
 
     $scope.incrementCount = function(){
       $scope.issueCount++;
-      $scope.loading = true;
-      $scope.getRepoInfo($scope.results[$scope.issueCount]);
+      // $scope.loading = true;
+      // $scope.getRepoInfo($scope.results[$scope.issueCount]);
       console.log($scope.issueCount);
     };
 
@@ -32,7 +32,7 @@ angular.module('gitLuckyApp')
       GithubAPIService.getRepoInfo($scope.results[$scope.issueCount].url)
         .success(function(data){
           $scope.repoInfo = data;
-          $scope.loading = false;
+          // $scope.loading = false;
         })
         .error(function(err){
           console.warn(err);
@@ -43,7 +43,7 @@ angular.module('gitLuckyApp')
       GithubAPIService.searchIssues($scope.language)
         .success(function(data){
           $scope.results = data.items;
-          $scope.getRepoInfo($scope.results[0]);
+          // $scope.getRepoInfo($scope.results[0]);
           console.log(data);
         })
         .error(function(err){
