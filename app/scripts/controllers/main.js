@@ -17,6 +17,22 @@ angular.module('gitLuckyApp')
     ];
     $scope.language = '';
 
+    $scope.issueCount = 0;
+
+    $scope.incrementCount = function(){
+      $scope.issueCount++;
+      console.log($scope.issueCount);
+    };
+
+    $scope.getRepoInfo = function(){
+      GithubAPIService.getRepoInfo($scope.results[$scope.issueCount].url)
+        .success(function(data){
+          $scope.results.repoInfo = data;
+        })
+        .error(function(err){
+          console.warn(err);
+        });
+    };
     $scope.getIssues = function(){
       // console.log('getting the issues for language ' + $scope.language);
       GithubAPIService.searchIssues($scope.language)
