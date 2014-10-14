@@ -10,6 +10,19 @@ angular.module('gitLuckyApp')
           method: 'GET',
           url: this.apiPath + language + '&per_page=100'
         });
+      },
+
+      getRepoInfo: function(issueUrl){
+        var splitUrl = issueUrl.split('/');
+        splitUrl.pop();
+        splitUrl.pop();
+        var repoUrl = splitUrl.join('/');
+
+        return $http({
+          method: 'GET',
+          url: repoUrl
+        });
       }
+
     };
   });

@@ -12,7 +12,8 @@
 </div>
 <div class="row" ng-show="results">
   <h3>Try this one out:</h3>
-  <!-- <p><strong>Repo: {{getRepoInfo()}}</strong>  -->
+  <p><strong>Repo: <a href="{{repoInfo.html_url}}">{{repoInfo.full_name}}</a></strong> 
+  <p><strong>Description:</strong> {{repoInfo.description}}
   <p><strong>Title:</strong> {{results[issueCount].title}}</p>
   <p><strong>Body: </strong> {{results[issueCount].body}}</p>
   <button ng-click="incrementCount()">Nope</button> <a href="{{results[issueCount].html_url}}"<button>Go for it</button>
