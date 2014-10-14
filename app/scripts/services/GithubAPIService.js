@@ -8,7 +8,7 @@ angular.module('gitLuckyApp')
       searchIssues: function(language){
         return $http({
           method: 'GET',
-          url: this.apiPath + 'barghlanguage'
+          url: this.apiPath + language
         });
       }
     };
