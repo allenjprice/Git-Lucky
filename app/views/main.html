@@ -1,15 +1,23 @@
 <div class="jumbotron" ng-hide="results">
-  <h1>Git Lucky</h1>
+  <h1 class="logo">Git Lucky</h1>
+  <img src="/images/daftpunktocat-thomas.gif" class="daftpunktocat">
   <p class="lead">
-    GitHub's missing "I'm Feeling Lucky" button
+    Lose Yourself to Code.
   </p>
 </div>
+
 <div class="row">
-  <p>
-    <label for="language">Choose your langauge: </label>  
-    <select ng-model="language" name="language" ng-options="value for value in languageOptions" />
-<a class="btn btn-md btn-primary" ng-click="getIssues()">Let's Git Lucky</span></a></p>
+  <div class="col col-lg-2">
+    <label for="language">Choose your langauge: </label> 
+  </div> 
+  <div class="col col-lg-6">
+    <select class="form-control" ng-model="language" name="language" ng-options="value for value in languageOptions" />
+  </div>
+  <div class="col col-lg-4">
+    <a class="btn btn-md btn-primary btn-block" ng-click="getIssues()">Let's Git Lucky</span></a>
+  </div>
 </div>
+
 <div class="row" ng-show="results">
   <h3>Try this one out:</h3>
   <!-- <p ng-show="!loading"><strong>Repo: <a href="{{repoInfo.html_url}}">{{repoInfo.full_name}}</a></strong>  -->
