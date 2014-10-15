@@ -33,12 +33,12 @@ Git Lucky solves this problem by showing you only one issue. If you think you ca
   -- Allen J Price
 
 ## How do I Get Started? ##
-Go to [$URL]($URL), select a language, and get going!
+Go to [http://gitlucky.azurewebsites.net](http://gitlucky.azurewebsites.net), select a language, and get going!
 
 ## What do other users say about Git Lucky? ##
   > "Git Lucky helped me turn open source work from 'I should do that someday' to a daily habit."
   -- Bob Loblaw
 
 ## Closing and Call to Action ##
-The world of open source awaits! Head over to [$URL]($URL) right away and dive in!
+The world of open source awaits! Head over to [http://gitlucky.azurewebsites.net](http://gitlucky.azurewebsites.net) right away and dive in!
   
