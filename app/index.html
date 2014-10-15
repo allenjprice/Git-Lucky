@@ -22,12 +22,20 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div id="wrap">
+      <div class="container">
 
-      <div ng-view=""></div>
+        <div ng-view=""></div>
 
+        <div id="push"></div>
+      </div>
     </div>
 
+    <div id="footer">
+      <div class="container">
+        Made with love, coffee, and rhythm by <a href="http://www.allenjprice.com">@allenjprice</a>
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -50,7 +58,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <!-- <script src="lib/jquery/dist/jquery.js"></script> -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>g
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="lib/angular-resource/angular-resource.js"></script>
