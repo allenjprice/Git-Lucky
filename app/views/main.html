@@ -14,17 +14,19 @@
     <select class="form-control" ng-model="language" name="language" ng-options="value for value in languageOptions" />
   </div>
   <div class="col col-lg-4">
-    <a class="btn btn-md btn-primary btn-block" ng-click="getIssues()">Let's Git Lucky</span></a>
+    <a class="btn btn-md btn-primary btn-block" ng-click="getIssues()">Let's Git Lucky</a>
   </div>
 </div>
 
 <div class="row" ng-show="results">
-  <h3>Try this one out:</h3>
-  <!-- <p ng-show="!loading"><strong>Repo: <a href="{{repoInfo.html_url}}">{{repoInfo.full_name}}</a></strong>  -->
-  <!-- <p ng-show="!loading"><strong>Description:</strong> {{repoInfo.description}} -->
-  <p><strong>Title:</strong> {{results[issueCount].title}}</p>
-  <!-- <p ng-show="!loading"><strong>Title:</strong> {{results[issueCount].title}}</p> -->
-  <p><strong>Body: </strong> {{results[issueCount].body}}</p>
-  <!-- <p ng-show="!loading"><strong>Body: </strong> {{results[issueCount].body}}</p> -->
-  <button class="btn btn-lg btn-danger" ng-click="incrementCount()"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</button> <a href="{{results[issueCount].html_url}}"><button class="btn btn-lg btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Go for it</button>
+  <div class="col">
+    <h3>Try this one out:</h3>
+    <!-- <p ng-show="!loading"><strong>Repo: <a href="{{repoInfo.html_url}}">{{repoInfo.full_name}}</a></strong>  -->
+    <!-- <p ng-show="!loading"><strong>Description:</strong> {{repoInfo.description}} -->
+    <p><strong>Title:</strong> {{results[issueCount].title}}</p>
+    <!-- <p ng-show="!loading"><strong>Title:</strong> {{results[issueCount].title}}</p> -->
+    <p><strong>Body: </strong> {{results[issueCount].body}}</p>
+    <!-- <p ng-show="!loading"><strong>Body: </strong> {{results[issueCount].body}}</p> -->
+    <button class="btn btn-lg btn-danger" ng-click="incrementCount()"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</button> <a href="{{results[issueCount].html_url}}"><button class="btn btn-lg btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Go for it</button></a>
+  </div>
 </div>
